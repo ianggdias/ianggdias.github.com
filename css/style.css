@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+ font-family: 'Montserrat',sans-serif;
+ color:black;
+ background-color: white;
+ font-size: 18px;
+ line-height: 1.8;
+ text-align: left;
+}
+.site {
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "nav nav nav nav"
+        "banner banner banner banner"
+        "princ princ princ princ"
+        "quem quem quem quem"
+        "nc nc nc nc"
+        "img img prod prod"
+        "video video video video"
+        "map map map map"
+        "rodape rodape rodape rodape"
+}
+nav { 
+    width: 100%; 
+    background: #00acb7; 
+    float: left; 
+    padding: 10px 0px; 
+}
+nav ul li { 
+    list-style: none; 
+    display: inline; 
+}
+nav ul li a { 
+    padding: 10px; 
+}
+#menu, .menu {	
+    display: none; 
+}
+.navbar {
+    background-color: #00acb7;
+    grid-area: nav;
+}
+.navbar-text{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 1em;
+    float: right;
+}
+.logo {
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    float: left;
+}
+.slide-top {
+	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  @keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  
+a:hover {
+    color: gray;
+}
+.container{
+    display: block;
+    width: 100%;
+    height: auto;
+    grid-area: princ;
+}
+.containerazul{
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: #00acb7;
+    grid-area: quem;
+    transition:background-color 2s ease 0s;
+}
+.containerazul:hover {
+    background-color: darkslategrey;
+    display: block;
+}
+.container2{
+    display: block;
+    width: 100%;
+    height: auto;
+    grid-area: nc;
+}
+.container3{
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    margin-right: 10%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    grid-area: prod;
+}
+.containerazul2{
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: #00acb7;
+    grid-area: video;
+    transition:background-color 2s ease 0s;
+}
+.containerazul2:hover {
+    background-color: darkslategrey;
+    display: block;
+}
+.textocolecao {
+    font-size: 16px;
+}
+.colecao{
+    float: left;
+    padding-top: auto;
+    margin-left: 10%;
+    grid-area: img;
+    padding-top: 60px;
+    animation-duration: 2s;
+    animation-name: slidein;
+    animation-timing-function: ease-in;
+    animation-delay: 0.5s;
+}
+@keyframes slidein {
+    from {
+      margin-left: 0%;
+      width: 10%
+    }
+  
+    to {
+      margin-left: 10%;
+      width: 70%;
+    }
+  }
+.textobranco {
+    color:white;
+}
+p{
+    padding-top: 10px;
+}
+h1{
+    padding-top: 10px;
+}
+div{
+    display: table-cell;
+    text-align: center;
+    width: 100%;    
+}
+.banner{
+  max-width: 100%;
+  height: auto;
+  grid-area: banner;
+}
+form{
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 10px 10px 10px;
+    
+    }
+    input, textarea{
+        width: 474px;
+        padding: 10px;
+        }
+        
+        .enviar input {
+        background-color: #00acb7;
+        height: 40px;
+        width: 150px;
+        font-weight: bold;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border: 1px solid;
+        color: #FFF;
+        cursor: pointer;
+        }
+        
+        .enviar input:hover{
+        background: #00acb7;
+        }
+        
+        textarea {
+        width: 474px;
+        height: 120px;
+        line-height: 20px;
+        }
+        .rodape {
+            margin-top: 20px;
+            background-color:#00acb7;
+            color: white;
+            grid-area: rodape;
+        }
+        .textoFooter{
+            padding-bottom: 2em;
+            padding: 1em;
+            padding-right: 2em;
+            text-align: center;
+        }
+
+        .zoom {
+            overflow: hidden;
+        }
+        
+        .zoom img {
+            max-width: 100%;
+            height: auto;
+            -moz-transition: all 0.3s;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+        
+        .zoom:hover img {
+            -moz-transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+        .angry-animate:hover{
+            -webkit-animation:shake 4s ease 0s 1 normal;
+            -moz-animation:shake 4s ease 0s 1 normal;
+            -ms-animation:shake 4s ease 0s 1 normal;
+            animation:shake 4s ease 0s 1 normal;
+            }
+            
+            @-webkit-keyframes shake {
+            0%{ transform: rotate(-15deg); -webkit-transform: rotate(-15deg); }
+            2%{ transform: rotate(15deg); -webkit-transform: rotate(15deg); }
+            4%{ transform: rotate(-18deg); -webkit-transform: rotate(-18deg); }
+            6%{ transform: rotate(18deg); -webkit-transform: rotate(18deg); }
+            8%{ transform: rotate(-22deg); -webkit-transform: rotate(-22deg); }
+            10%{ transform: rotate(22deg); -webkit-transform: rotate(22deg); }
+            12%{ transform: rotate(-18deg); -webkit-transform: rotate(-18deg); }
+            14%{ transform: rotate(18deg); -webkit-transform: rotate(18deg); }
+            16%{ transform: rotate(-12deg); -webkit-transform: rotate(-12deg); }
+            18%{ transform: rotate(-12deg); -webkit-transform: rotate(-12deg); }
+            20%{ transform: rotate(0deg); -webkit-transform: rotate(0deg); }
+            }
+            
+            @keyframes shake {
+            0%{ transform: rotate(-15deg); -ms-transform: rotate(-15deg); }
+            2%{ transform: rotate(15deg); -ms-transform: rotate(15deg); }
+            4%{ transform: rotate(-18deg); -ms-transform: rotate(-18deg); }
+            6%{ transform: rotate(18deg); -ms-transform: rotate(18deg); }
+            8%{ transform: rotate(-22deg); -ms-transform: rotate(-22deg); }
+            10%{ transform: rotate(22deg); -ms-transform: rotate(22deg); }
+            12%{ transform: rotate(-18deg); -ms-transform: rotate(-18deg); }
+            14%{ transform: rotate(18deg); -ms-transform: rotate(-18deg); }
+            16%{ transform: rotate(-12deg); -ms-transform: rotate(-12deg); }
+            18%{ transform: rotate(-12deg); -ms-transform: rotate(-12deg); }
+            20%{ transform: rotate(0deg); -ms-transform: rotate(0deg); }
+            }
+            .nerd-animate{
+                -webkit-animation:appear 1s ease 0s 1 normal;
+                -moz-animation:appear 1s ease 0s 1 normal;
+                -ms-animation:appear 1s ease 0s 1 normal;
+                animation:appear 1s ease 0s 1 normal;
+                }
+                @-webkit-keyframes appear {
+                0%{ opacity: 0; -webkit-transform: scale3d(0.3, 0.3, 0.3); transform: scale3d(0.3, 0.3, 0.3); }
+                60%{ opacity: 1; -webkit-transform: scale3d(1,1,1); transform: scale3d(1,1,1); }
+                }
+                @keyframes appear {
+                0%{ opacity: 0; transform: scale3d(0.3, 0.3, 0.3); }
+                60%{ opacity: 1; transform: scale3d(1,1,1); }
+                }
+        .video {
+            padding-bottom: 60px;
+        }
+        .container4{
+            display: block;
+            width: 100%;
+            height: auto;
+            text-align: center;
+            margin-right: 10%;
+            padding-top: 20px;
+            padding-bottom: 50px;
+            grid-area: map;
+        }
+        @media screen and (max-width: 1000px){
+            .site{
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: auto auto auto;
+                grid-template-areas: "nav nav nav"
+                    "banner banner banner"
+                    "princ princ princ"
+                    "quem quem quem"
+                    "nc nc nc"
+                    "img img img"
+                    "prod prod prod"
+                    "video video video"
+                    "map map map"
+                    "rodape rodape rodape"
+            }
+            .navbar-text{
+                color: white;
+                text-decoration: none;
+                font-size: 14px;
+                padding: 1em;
+                float: right;
+            }
+        }
+            @media screen and (max-width: 800px){
+                .site{
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-rows: auto auto auto;
+                    grid-template-areas: "nav nav nav"
+                        "banner banner banner"
+                        "princ princ princ"
+                        "quem quem quem"
+                        "nc nc nc"
+                        "img img img"
+                        "prod prod prod"
+                        "video video video"
+                        "map map map"
+                        "rodape rodape rodape"
+                }
+                input, textarea{
+                    width: 400px;
+                    padding: 10px;
+                    }
+                    .navbar-text{
+                        color: white;
+                        text-decoration: none;
+                        font-size: 12px;
+                        padding: 1em;
+                        float: right;
+                    }
+                    .logo {
+                        padding-left: 20px;
+                        padding-top: 30px;
+                        padding-bottom: 20px;
+                        width: 40%;
+                        float: left;
+                    }
+            }
