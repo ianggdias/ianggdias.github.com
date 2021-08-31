@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Notas</title>
+    <link rel="stylesheet" href="css/style.css" media="all">
+    <script src="scripts/main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<script src="https://kit.fontawesome.com/abf31961c2.js" crossorigin="anonymous"></script>
+<body>
+    <nav class="corPrimaria navbar navbar-expand-md navbar-dark sticky-top">
+         <a class="navbar-brand titulosBrancos" href="#"><img src="img/logo.png" height="60" width="auto"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSite">
+              <ul class="navbar-nav ml-auto">
+              <li class="nav-item"> 
+                  <a class="nav-link" href="#">Home</a> </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Contato</a> </li>
+              <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Notas</a> </li>
+              </ul>
+         </div>
+         </div>
+      </nav>
+      <div class="container">
+      <h1 class="textopreto">Portal de Notas</h1>
+        <p class="textopreto">Confira e edite as notas de alunos. Utilize a barra de pesquisa para encontrar o nome ou ID dos alunos.
+            <br>Clique no nome para obter detalhes sobre as notas.</p>
+            <div class="input-group rounded">
+                <input type="search" class="form-control rounded custom-box" placeholder="Pesquise aqui o nome do aluno" aria-label="Search"
+                  aria-describedby="search-addon" />
+                <span class="input-group-text border-0" id="search-addon"><a href="#" class="botaopesquisar">
+                  <i class="fas fa-search"></i>
+                </a>
+                </span>
+              </div>
+        </div>
+        <div class="container">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <table class="table table-condensed table-striped">
+                            <thead>
+                                <tr>
+                                    <th class="textotable">ID</th>
+                                    <th class="textotable">Nome Completo</th>
+                                    <th class="textotable">Curso</th>
+                                    <th class="textotable">Turma</th>
+                                    <th class="textotable">Status</th>
+                                </tr>
+                            </thead>
+        
+                            <tbody>
+                                <tr data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
+                                    <td class="textotable">1</td>
+                                    <td class="textotable">Ian Guimarães Grijó Dias</td>
+                                    <td class="textotable">Ensino Médio</td>
+                                    <td class="textotable">1301A</td>
+                                    <td class="textotable">Formado</td>
+                                    <td><a href="perfil_ian.html" class="perfilbutton"><button type="button" class="btn btn-dark">Ver Perfil</button></a></td>
+                                </tr>
+        
+                                <tr>
+                                    <td colspan="12" class="hiddenRow">
+                                        <div class="accordian-body collapse" id="demo1">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr class="info">
+                                                        <th>Disciplina</th>
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th class="textotable">N1</th>
+                                                        <th class="textotable">N2</th>		
+                                                        <th class="textotable">N3</th>	
+                                                        <th class="textotable">N4</th>	
+                                                        <th class="textotable">MF</th>
+                                                    </tr>
+                                                </thead>
+        
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Matemática</td>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <td class="textotable" contenteditable="true">10</td>
+                                                            <td class="textotable" contenteditable="true">9,5</td>
+                                                            <td class="textotable" contenteditable="true">9</td>
+                                                            <td class="textotable" contenteditable="true">10</td>
+                                                            <td class="textotable" contenteditable="true">9,5</td>
+                                                    </tr>
+        
+                                                    <tr>
+                                                        <td>Língua Portuguesa</td>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <td class="textotable" contenteditable="true">8</td>
+                                                            <td class="textotable" contenteditable="true">9</td>
+                                                            <td class="textotable" contenteditable="true">10</td>
+                                                            <td class="textotable" contenteditable="true">7</td>
+                                                            <td class="textotable" contenteditable="true">8,5</td>
+                                                    </tr>
+        
+                                                    <tr>
+                                                        <td>Geografia</td>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <td class="textotable" contenteditable="true">7</td>
+                                                            <td class="textotable" contenteditable="true">8,5</td>
+                                                            <td class="textotable" contenteditable="true">7,5</td>
+                                                            <td class="textotable" contenteditable="true">10</td>
+                                                            <td class="textotable" contenteditable="true">8,5</td>
+                                                    </tr>
+        
+                                                    <tr>
+                                                        <td>História</td>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <td class="textotable" contenteditable="true">8</td>
+                                                            <td class="textotable" contenteditable="true">9</td>
+                                                            <td class="textotable" contenteditable="true">9</td>
+                                                            <td class="textotable" contenteditable="true">7,5</td>
+                                                            <td class="textotable" contenteditable="true">8,5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Biologia</td>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <td class="textotable" contenteditable="true">6</td>
+                                                            <td class="textotable" contenteditable="true">7,5</td>
+                                                            <td class="textotable" contenteditable="true">9,5</td>
+                                                            <td class="textotable" contenteditable="true">8</td>
+                                                            <td class="textotable" contenteditable="true">8</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Química</td>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <td class="textotable" contenteditable="true">6,5</td>
+                                                            <td class="textotable" contenteditable="true">7,5</td>
+                                                            <td class="textotable" contenteditable="true">9</td>
+                                                            <td class="textotable" contenteditable="true">8</td>
+                                                            <td class="textotable" contenteditable="true">8</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Física</td>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <td class="textotable" contenteditable="true">7</td>
+                                                            <td class="textotable" contenteditable="true">7,5</td>
+                                                            <td class="textotable" contenteditable="true">8,5</td>
+                                                            <td class="textotable" contenteditable="true">6</td>
+                                                            <td class="textotable" contenteditable="true">7,5</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+        
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tbody>
+                                    <tr data-toggle="collapse" data-target="#demo2" class="accordion-toggle">
+                                        <td class="textotable">2</td>
+                                        <td class="textotable">Paul Bruce Dickinson</td>
+                                        <td class="textotable">Ensino Médio</td>
+                                        <td class="textotable">1301B</td>
+                                        <td class="textotable">Formado</td>
+                                        <td><a href="perfil_bruce.html" class="perfilbutton"><button type="button" class="btn btn-dark">Ver Perfil</button></a></td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td colspan="12" class="hiddenRow">
+                                            <div class="accordian-body collapse" id="demo2">
+                                                <table class="table table-striped">
+                                                    <thead>
+                                                        <tr class="info">
+                                                            <th>Disciplina</th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th class="textotable">N1</th>
+                                                            <th class="textotable">N2</th>		
+                                                            <th class="textotable">N3</th>	
+                                                            <th class="textotable">N4</th>	
+                                                            <th class="textotable">MF</th>
+                                                        </tr>
+                                                    </thead>
+            
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Matemática</td>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                                <td class="textotable" contenteditable="true">9,5</td>
+                                                                <td class="textotable" contenteditable="true">9</td>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                                <td class="textotable" contenteditable="true">9,5</td>
+                                                        </tr>
+            
+                                                        <tr>
+                                                            <td>Língua Portuguesa</td>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <td class="textotable" contenteditable="true">8</td>
+                                                                <td class="textotable" contenteditable="true">9</td>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                                <td class="textotable" contenteditable="true">7</td>
+                                                                <td class="textotable" contenteditable="true">8,5</td>
+                                                        </tr>
+            
+                                                        <tr>
+                                                            <td>Geografia</td>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <td class="textotable" contenteditable="true">7</td>
+                                                                <td class="textotable" contenteditable="true">8,5</td>
+                                                                <td class="textotable" contenteditable="true">7,5</td>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                                <td class="textotable" contenteditable="true">8,5</td>
+                                                        </tr>
+            
+                                                        <tr>
+                                                            <td>História</td>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Biologia</td>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <td class="textotable" contenteditable="true">6</td>
+                                                                <td class="textotable" contenteditable="true">7,5</td>
+                                                                <td class="textotable" contenteditable="true">9,5</td>
+                                                                <td class="textotable" contenteditable="true">8</td>
+                                                                <td class="textotable" contenteditable="true">8</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Química</td>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <td class="textotable" contenteditable="true">6,5</td>
+                                                                <td class="textotable" contenteditable="true">7,5</td>
+                                                                <td class="textotable" contenteditable="true">9</td>
+                                                                <td class="textotable" contenteditable="true">8</td>
+                                                                <td class="textotable" contenteditable="true">8</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Física</td>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <td class="textotable" contenteditable="true">7</td>
+                                                                <td class="textotable" contenteditable="true">7,5</td>
+                                                                <td class="textotable" contenteditable="true">8,5</td>
+                                                                <td class="textotable" contenteditable="true">6</td>
+                                                                <td class="textotable" contenteditable="true">7,5</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+            
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tbody>
+                                        <tr data-toggle="collapse" data-target="#demo3" class="accordion-toggle">
+                                            <td class="textotable">3</td>
+                                            <td class="textotable">John Michael Osbourne</td>
+                                            <td class="textotable">Ensino Médio</td>
+                                            <td class="textotable">1201A</td>
+                                            <td class="textotable">Cursando</td>
+                                            <td><a href="perfil_ozzy.html" class="perfilbutton"><button type="button" class="btn btn-dark">Ver Perfil</button></a></td>
+                                        </tr>                                        
+                
+                                        <tr>
+                                            <td colspan="12" class="hiddenRow">
+                                                <div class="accordian-body collapse" id="demo3">
+                                                    <table class="table table-striped">
+                                                        <thead>
+                                                            <tr class="info">
+                                                                <th>Disciplina</th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th class="textotable">N1</th>
+                                                                <th class="textotable">N2</th>		
+                                                                <th class="textotable">N3</th>	
+                                                                <th class="textotable">N4</th>	
+                                                                <th class="textotable">MF</th>
+                                                            </tr>
+                                                        </thead>
+                
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Matemática</td>
+                                                                    <th></th>
+                                                                    <th></th>
+                                                                    <th></th>
+                                                                    <th></th>
+                                                                    <td class="textotable" contenteditable="true">10</td>
+                                                                    <td class="textotable" contenteditable="true">9,5</td>
+                                                                    <td class="textotable" contenteditable="true">9</td>
+                                                                    <td class="textotable" contenteditable="true">-</td>
+                                                                    <td class="textotable" contenteditable="true">-</td>
+                                                            </tr>
+                
+                                                            <tr>
+                                                                <td>Língua Portuguesa</td>
+                                                                    <th></th>
+                                                                    <th></th>
+                                                                    <th></th>
+                                                                    <th></th>
+                                                                    <td class="textotable" contenteditable="true">8</td>
+                                                                    <td class="textotable" contenteditable="true">9</td>
+                                                                    <td class="textotable" contenteditable="true">10</td>
+                                                                    <td class="textotable" contenteditable="true">-</td>
+                                                                    <td class="textotable" contenteditable="true">-</td>
+                                                            </tr>
+                
+                                                            <tr>
+                                                                <td>Geografia</td>
+                                                                    <th></th>
+                                                                    <th></th>
+                                                                    <th></th>
+                                                                    <th></th>
+                                                                    <td class="textotable" contenteditable="true">7</td>
+                                                                    <td class="textotable" contenteditable="true">8,5</td>
+                                                                    <td class="textotable" contenteditable="true">7,5</td>
+                                                                    <td class="textotable" contenteditable="true">-</td>
+                                                                    <td class="textotable" contenteditable="true">-</td>
+                                                            </tr>
+                
+                                                            <tr>
+                                                                <td>História</td>
+                                                                    <th></th>
+                                                                    <th></th>
+                                                                    <th></th>
+                                                                    <th></th>
+                                                                    <td class="textotable" contenteditable="true">8</td>
+                                                                    <td class="textotable" contenteditable="true">9</td>
+                                                                    <td class="textotable" contenteditable="true">9</td>
+                                                                    <td class="textotable" contenteditable="true">-</td>
+                                                                    <td class="textotable" contenteditable="true">-</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Biologia</td>
+                                                                    <th></th>
+                                                                    <th></th>
+                                                                    <th></th>
+                                                                    <th></th>
+                                                                    <td class="textotable" contenteditable="true">6</td>
+                                                                    <td class="textotable" contenteditable="true">7,5</td>
+                                                                    <td class="textotable" contenteditable="true">9,5</td>
+                                                                    <td class="textotable" contenteditable="true">-</td>
+                                                                    <td class="textotable" contenteditable="true">-</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Química</td>
+                                                                    <th></th>
+                                                                    <th></th>
+                                                                    <th></th>
+                                                                    <th></th>
+                                                                    <td class="textotable" contenteditable="true">6,5</td>
+                                                                    <td class="textotable" contenteditable="true">7,5</td>
+                                                                    <td class="textotable" contenteditable="true">9</td>
+                                                                    <td class="textotable" contenteditable="true">-</td>
+                                                                    <td class="textotable" contenteditable="true">-</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Física</td>
+                                                                    <th></th>
+                                                                    <th></th>
+                                                                    <th></th>
+                                                                    <th></th>
+                                                                    <td class="textotable" contenteditable="true">7</td>
+                                                                    <td class="textotable" contenteditable="true">7,5</td>
+                                                                    <td class="textotable" contenteditable="true">8,5</td>
+                                                                    <td class="textotable" contenteditable="true">-</td>
+                                                                    <td class="textotable" contenteditable="true">-</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                
+                                                </div>
+                                            </td>
+                                        </tr>
+                            <tbody>
+                                <tr data-toggle="collapse" data-target="#demo4" class="accordion-toggle">
+                                    <td class="textotable">4</td>
+                                    <td class="textotable">Kai Michael Hansen</td>
+                                    <td class="textotable">Ensino Fundamental</td>
+                                    <td class="textotable">901A</td>
+                                    <td class="textotable">Formado</td>
+                                    <td><a href="perfil_kai.html" class="perfilbutton"><button type="button" class="btn btn-dark">Ver Perfil</button></a></td>
+                                </tr>      
+                                <tr>
+                                    <td colspan="12" class="hiddenRow">
+                                        <div class="accordian-body collapse" id="demo4">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr class="info">
+                                                        <th>Disciplina</th>
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th></th>
+                                                        <th class="textotable">N1</th>
+                                                        <th class="textotable">N2</th>		
+                                                        <th class="textotable">N3</th>	
+                                                        <th class="textotable">N4</th>	
+                                                        <th class="textotable">MF</th>
+                                                    </tr>
+                                                </thead>
+        
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Matemática</td>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <td class="textotable" contenteditable="true">10</td>
+                                                            <td class="textotable" contenteditable="true">9,5</td>
+                                                            <td class="textotable" contenteditable="true">9</td>
+                                                            <td class="textotable" contenteditable="true">10</td>
+                                                            <td class="textotable" contenteditable="true">9,5</td>
+                                                    </tr>
+        
+                                                    <tr>
+                                                        <td>Língua Portuguesa</td>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <td class="textotable" contenteditable="true">8</td>
+                                                            <td class="textotable" contenteditable="true">9</td>
+                                                            <td class="textotable" contenteditable="true">10</td>
+                                                            <td class="textotable" contenteditable="true">7</td>
+                                                            <td class="textotable" contenteditable="true">8,5</td>
+                                                    </tr>
+        
+                                                    <tr>
+                                                        <td>Geografia</td>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <td class="textotable" contenteditable="true">7</td>
+                                                            <td class="textotable" contenteditable="true">8,5</td>
+                                                            <td class="textotable" contenteditable="true">7,5</td>
+                                                            <td class="textotable" contenteditable="true">10</td>
+                                                            <td class="textotable" contenteditable="true">8,5</td>
+                                                    </tr>
+        
+                                                    <tr>
+                                                        <td>História</td>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <td class="textotable" contenteditable="true">8</td>
+                                                            <td class="textotable" contenteditable="true">9</td>
+                                                            <td class="textotable" contenteditable="true">9</td>
+                                                            <td class="textotable" contenteditable="true">7,5</td>
+                                                            <td class="textotable" contenteditable="true">8,5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Biologia</td>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <td class="textotable" contenteditable="true">6</td>
+                                                            <td class="textotable" contenteditable="true">7,5</td>
+                                                            <td class="textotable" contenteditable="true">9,5</td>
+                                                            <td class="textotable" contenteditable="true">8</td>
+                                                            <td class="textotable" contenteditable="true">8</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Química</td>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <td class="textotable" contenteditable="true">6,5</td>
+                                                            <td class="textotable" contenteditable="true">7,5</td>
+                                                            <td class="textotable" contenteditable="true">9</td>
+                                                            <td class="textotable" contenteditable="true">8</td>
+                                                            <td class="textotable" contenteditable="true">8</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Física</td>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <td class="textotable" contenteditable="true">7</td>
+                                                            <td class="textotable" contenteditable="true">7,5</td>
+                                                            <td class="textotable" contenteditable="true">8,5</td>
+                                                            <td class="textotable" contenteditable="true">6</td>
+                                                            <td class="textotable" contenteditable="true">7,5</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+        
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tbody>
+                                    <tr data-toggle="collapse" data-target="#demo5" class="accordion-toggle">
+                                        <td class="textotable">5</td>
+                                        <td class="textotable">André Coelho Matos</td>
+                                        <td class="textotable">Ensino Médio</td>
+                                        <td class="textotable">1302B</td>
+                                        <td class="textotable">Formado</td>
+                                        <td><a href="perfil_andre.html" class="perfilbutton"><button type="button" class="btn btn-dark">Ver Perfil</button></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="12" class="hiddenRow">
+                                            <div class="accordian-body collapse" id="demo5">
+                                                <table class="table table-striped">
+                                                    <thead>
+                                                        <tr class="info">
+                                                            <th>Disciplina</th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th></th>
+                                                            <th class="textotable">N1</th>
+                                                            <th class="textotable">N2</th>		
+                                                            <th class="textotable">N3</th>	
+                                                            <th class="textotable">N4</th>	
+                                                            <th class="textotable">MF</th>
+                                                        </tr>
+                                                    </thead>
+            
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Matemática</td>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                        </tr>
+            
+                                                        <tr>
+                                                            <td>Língua Portuguesa</td>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                        </tr>
+            
+                                                        <tr>
+                                                            <td>Geografia</td>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                        </tr>
+            
+                                                        <tr>
+                                                            <td>História</td>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Biologia</td>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Química</td>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Física</td>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                                <td class="textotable" contenteditable="true">10</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+            
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tbody>
+                                        <tr data-toggle="collapse" data-target="#demo6" class="accordion-toggle">
+                                            <td class="textotable">6</td>
+                                            <td class="textotable">Lars Mikael Åkerfeldt</td>
+                                            <td class="textotable">Ensino Fundamental</td>
+                                            <td class="textotable">802B</td>
+                                            <td class="textotable">Trancado</td>
+                                            <td><a href="perfil_mikael.html" class="perfilbutton"><button type="button" class="btn btn-dark">Ver Perfil</button></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="12" class="hiddenRow">
+                                                <div class="accordian-body collapse" id="demo6">
+                                                    <table class="table table-striped">
+                                                        <thead>
+                                                            <tr class="info">
+                                                                <th>Disciplina</th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th class="textotable">N1</th>
+                                                                <th class="textotable">N2</th>		
+                                                                <th class="textotable">N3</th>	
+                                                                <th class="textotable">N4</th>	
+                                                                <th class="textotable">MF</th>
+                                                            </tr>
+                                                        </thead>
+                
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Matemática</td>
+                                                                    <th></th>
+                                                                    <th></th>
+                                                                    <th></th>
+                                                                    <th></th>
+                                                                    <td class="textotable" contenteditable="true">10</td>
+                                                                    <td class="textotable" contenteditable="true">9,5</td>
+                                                                    <td class="textotable" contenteditable="true">-</td>
+                                                                    <td class="textotable" contenteditable="true">-</td>
+                                                                    <td class="textotable" contenteditable="true">-</td>
+                                                            </tr>
+                
+                                                            <tr>
+                                                                <td>Língua Portuguesa</td>
+                                                                    <th></th>
+                                                                    <th></th>
+                                                                    <th></th>
+                                                                    <th></th>
+                                                                    <td class="textotable" contenteditable="true">8</td>
+                                                                    <td class="textotable" contenteditable="true">9</td>
+                                                                    <td class="textotable" contenteditable="true">-</td>
+                                                                    <td class="textotable" contenteditable="true">-</td>
+                                                                    <td class="textotable" contenteditable="true">-</td>
+                                                            </tr>
+                
+                                                            <tr>
+                                                                <td>Geografia</td>
+                                                                    <th></th>
+                                                                    <th></th>
+                                                                    <th></th>
+                                                                    <th></th>
+                                                                    <td class="textotable" contenteditable="true">7</td>
+                                                                    <td class="textotable" contenteditable="true">8,5</td>
+                                                                    <td class="textotable" contenteditable="true">-</td>
+                                                                    <td class="textotable" contenteditable="true">-</td>
+                                                                    <td class="textotable" contenteditable="true">-</td>
+                                                            </tr>
+                
+                                                            <tr>
+                                                                <td>História</td>
+                                                                    <th></th>
+                                                                    <th></th>
+                                                                    <th></th>
+                                                                    <th></th>
+                                                                    <td class="textotable" contenteditable="true">8</td>
+                                                                    <td class="textotable" contenteditable="true">9</td>
+                                                                    <td class="textotable" contenteditable="true">-</td>
+                                                                    <td class="textotable" contenteditable="true">-</td>
+                                                                    <td class="textotable" contenteditable="true">-</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Biologia</td>
+                                                                    <th></th>
+                                                                    <th></th>
+                                                                    <th></th>
+                                                                    <th></th>
+                                                                    <td class="textotable" contenteditable="true">6</td>
+                                                                    <td class="textotable" contenteditable="true">7,5</td>
+                                                                    <td class="textotable" contenteditable="true">-</td>
+                                                                    <td class="textotable" contenteditable="true">-</td>
+                                                                    <td class="textotable" contenteditable="true">-</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Química</td>
+                                                                    <th></th>
+                                                                    <th></th>
+                                                                    <th></th>
+                                                                    <th></th>
+                                                                    <td class="textotable" contenteditable="true">6,5</td>
+                                                                    <td class="textotable" contenteditable="true">7,5</td>
+                                                                    <td class="textotable" contenteditable="true">-</td>
+                                                                    <td class="textotable" contenteditable="true">-</td>
+                                                                    <td class="textotable" contenteditable="true">-</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Física</td>
+                                                                    <th></th>
+                                                                    <th></th>
+                                                                    <th></th>
+                                                                    <th></th>
+                                                                    <td class="textotable" contenteditable="true">7</td>
+                                                                    <td class="textotable" contenteditable="true">7,5</td>
+                                                                    <td class="textotable" contenteditable="true">-</td>
+                                                                    <td class="textotable" contenteditable="true">-</td>
+                                                                    <td class="textotable" contenteditable="true">-</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                
+                                                </div>
+                                            </td>
+                                        </tr>
+                        
+                            </tbody>
+                        </table>
+                    </div>
+        
+                </div>
+        
+            </div>
+        </div>
+        <footer class="text-center text-lg-start bg-light text-muted">
+            <section
+              class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+            >
+              <div class="me-5 d-none d-lg-block">
+                <span>Fique ligado em nossas redes sociais</span>
+              </div>
+              <div>
+                <a href="" class="me-4 text-reset">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                  <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </div>
+            </section>
+            <div class="text-center p-4" style="background-color:#25282A;">
+                © 2021 Copyright by Ian Dias
+              </div>
+            </footer>
+               
+        

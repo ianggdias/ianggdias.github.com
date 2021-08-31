@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Notas</title>
+    <link rel="stylesheet" href="css/style.css" media="all">
+    <script src="scripts/main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<script src="https://kit.fontawesome.com/abf31961c2.js" crossorigin="anonymous"></script>
+<body>
+    <nav class="corPrimaria navbar navbar-expand-md navbar-dark sticky-top">
+         <a class="navbar-brand titulosBrancos" href="#"><img src="img/logo.png" height="60" width="auto"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSite">
+              <ul class="navbar-nav ml-auto">
+              <li class="nav-item"> 
+                  <a class="nav-link" href="#">Home</a> </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Contato</a> </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html">Notas</a> </li>
+              </ul>
+         </div>
+         </div>
+      </nav>
+      <div class="container espaco">
+        <div class="card h-100">
+            <div class="card-body">
+                <div class="row gutters">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <h6 class="mb-2 text-primary">Informações de Matrícula</h6>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="fullName">Nome Completo</label>
+					        <input type="text" class="form-control" id="fullName" placeholder="Kai Michael Hansen" disabled>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="datanascimento">Data de Nascimento</label>
+					        <input type="date" class="form-control" id="datanascimento" placeholder="17/01/2008" disabled>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="id">ID</label>
+					        <input type="text" class="form-control" id="id" placeholder="4" disabled>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="nbolsa">Número da Bolsa</label>
+					        <input type="text" class="form-control" id="nbolsa" placeholder="25285-9" disabled>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="datacadastro">Data Cadastro</label>
+					        <input type="date" class="form-control" id="datacadastro" placeholder="12/03/2014" disabled>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row gutters">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <h6 class="mt-3 mb-2 text-primary">Documentação</h6>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="nomepai">Nome do Pai</label>
+					        <input type="text" class="form-control" id="nomepai" placeholder="Caio D. M. Dias" disabled>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="nomemae">Nome da Mãe</label>
+					        <input type="text" class="form-control" id="nomemae" placeholder="Rafaela T. Oliveira" disabled>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="sexo">Sexo</label>
+					        <input type="text" class="form-control" id="sexo" placeholder="Masculino" disabled>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="naturalidade">Naturalidade</label>
+					        <input type="text" class="form-control" id="naturalidade" placeholder="Brasileira" disabled>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="doc">Tipo Documento</label>
+					        <input type="text" class="form-control" id="doc" placeholder="RG" disabled>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="cartorio">Cartório</label>
+					        <input type="text" class="form-control" id="cartorio" placeholder="Cartório da 5° C.R.C e Tabelionato" disabled>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="numregistro">Número Registro</label>
+					        <input type="text" class="form-control" id="numregistro" placeholder="968452" disabled>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="rg">RGo</label>
+					        <input type="text" class="form-control" id="rg" placeholder="27.508.236-2" disabled>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="cpf">CPF</label>
+					        <input type="text" class="form-control" id="cpf" placeholder="918.035.167-04" disabled>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row gutters">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <h6 class="mt-3 mb-2 text-primary">Endereço</h6>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="rua">Rua/Avenida</label>
+					        <input type="text" class="form-control" id="rua" placeholder="Rua Olímpio de Castro">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="bairro">Bairro</label>
+					        <input type="text" class="form-control" id="bairro" placeholder="Irajá">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="num">Número</label>
+					        <input type="text" class="form-control" id="num" placeholder="121">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="cep">CEP</label>
+					        <input type="text" class="form-control" id="cep" placeholder="23410-120">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="cidade">Cidade</label>
+					        <input type="text" class="form-control" id="cidade" placeholder="Rio de Janeiro">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="estado">Estado</label>
+					        <input type="text" class="form-control" id="estado" placeholder="RJ">
+                        </div>
+                    </div>
+                </div>
+                <div class="row gutters">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <h6 class="mt-3 mb-2 text-primary">Contato</h6>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+					        <input type="text" class="form-control" id="email" placeholder="khansen@gmail.com">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="telefone">Telefone</label>
+					        <input type="text" class="form-control" id="telefone" placeholder="(21)99674-5658">
+                        </div>
+                    </div>
+                </div>
+                <div class="row gutters">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="text-right">
+                            <a href="perfil_kai.html"><button type="button" id="submit" name="submit" class="btn btn-secondary">Cancelar</button></a>
+                            <a href="perfil_kai.html"><button type="button" id="submit" name="submit" class="btn btn-primary">Salvar</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+      <footer class="text-center text-lg-start bg-light text-muted">
+        <section
+          class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+        >
+          <div class="me-5 d-none d-lg-block">
+            <span>Fique ligado em nossas redes sociais</span>
+          </div>
+          <div>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </section>
+        <div class="text-center p-4" style="background-color:#25282A;">
+            © 2021 Copyright by Ian Dias
+          </div>
+        </footer>
+           
